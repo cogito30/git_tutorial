@@ -106,56 +106,40 @@ $$9편$$
 
 $$10편$$
 
- "방금 커밋 잘못했어요!": 취소의 미학
-
-주제: 상황별 커밋 되돌리기
-
-핵심 내용:
-
-방금 한 커밋 메시지 수정: git commit --amend
-
-아예 과거로 돌아가기: git reset (soft, mixed, hard 차이점)
-
-이미 Push 해버렸을 때 안전하게 되돌리기: git revert
+"방금 커밋 잘못했어요!": 취소의 미학
+- 주제: 상황별 커밋 되돌리기
+- 핵심 내용:
+  - 방금 한 커밋 메시지 수정: `git commit --amend`
+  - 아예 과거로 돌아가기: `git reset` (soft, mixed, hard 차이점)
+  - 이미 Push 해버렸을 때 안전하게 되돌리기: `git revert`
 
 $$11편$$
 
 $$비기$$
 
- 지워진 커밋도 살려내는 마법: Reflog
+지워진 커밋도 살려내는 마법: Reflog
 
-주제: Git 최후의 보루
+- 주제: Git 최후의 보루
+- 핵심 내용:
+  - `git reflog`를 이용해 실수로 삭제한 브랜치나 `reset --hard`로 날아간 코드 복구하기
 
-핵심 내용:
-
-git reflog를 이용해 실수로 삭제한 브랜치나 reset --hard로 날아간 코드 복구하기
-
-🟤 Part 6. 실무 적용 및 자동화 (에필로그)
+## 🟤 Part 6. 실무 적용 및 자동화 (에필로그)
 
 단순한 명령어 툴을 넘어 팀 문화를 만드는 과정입니다.
 
 $$12편$$
 
- 우리 팀은 어떻게 일할까? (Git Branching Strategies)
-
-주제: 실무에서 사용하는 대표적인 브랜치 전략들
-
-핵심 내용:
-
-Git Flow (전통적이고 무거운 방식)
-
-GitHub Flow (가볍고 빠른 CI/CD에 적합한 방식)
-
-Trunk-based Development (최신 트렌드)
+우리 팀은 어떻게 일할까? (Git Branching Strategies)
+- 주제: 실무에서 사용하는 대표적인 브랜치 전략들
+- 핵심 내용:
+  - Git Flow (전통적이고 무거운 방식)
+  - GitHub Flow (가볍고 빠른 CI/CD에 적합한 방식)
+  - Trunk-based Development (최신 트렌드)
 
 $$13편$$
 
- 휴먼 에러를 막아라: Git Hooks (Husky)
-
-주제: 커밋이나 푸시 전에 자동으로 검사 실행하기
-
-핵심 내용:
-
-Git Hooks의 개념
-
-프론트엔드/백엔드 실무 팁: Husky를 설정하여 Linter(ESLint 등), Code formatter(Prettier), 테스트 코드를 통과해야만 커밋되게 만들기
+휴먼 에러를 막아라: Git Hooks (Husky)
+- 주제: 커밋이나 푸시 전에 자동으로 검사 실행하기
+- 핵심 내용:
+  - Git Hooks의 개념
+  - 프론트엔드/백엔드 실무 팁: Husky를 설정하여 Linter(ESLint 등), Code formatter(Prettier), 테스트 코드를 통과해야만 커밋되게 만들기
